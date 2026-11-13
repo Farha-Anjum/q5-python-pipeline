@@ -9,12 +9,12 @@ pipeline {
         }
         stage('Syntax Check') {
             steps {
-                bat 'python -m py_compile app.py'
+                bat 'C:\Users\Miss\AppData\Local\Programs\Python\Python37\python.exe app.py'
             }
         }
         stage('Run Application') {
             steps {
-                bat 'python app.py'
+                bat 'C:\Users\Miss\AppData\Local\Programs\Python\Python37\python.exe app.py'
             }
         }
     }
